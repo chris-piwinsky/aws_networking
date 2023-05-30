@@ -147,6 +147,9 @@ resource "aws_route_table_association" "private_subnet_2" {
 }
 
 
-# module "rds_security_group" {
-#   source             = "./security_group"
+# module "bastion_host" {
+#   source          = "./bastion_host"
+#   vpc_id          = aws_vpc.main.id
+#   public_subnet_1 = aws_subnet.public_subnet_1.id
 # }
+
