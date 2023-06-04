@@ -1,6 +1,6 @@
 # Terraform AWS VPC with Public and Private Subnets
 
-This README provides instructions for using Terraform to create an AWS Virtual Private Cloud (VPC) with public and private subnets. It also includes the setup of Internet and NAT gateways to enable connectivity from the public subnet to the Internet and from the private subnet to the Internet via a NAT gateway.
+This project creates an AWS Virtual Private Cloud (VPC) with public and private subnets. It also includes the setup of Internet and NAT gateways to enable connectivity from the public subnet to the Internet and from the private subnet to the Internet via a NAT gateway.
 
 ## Prerequisites
 
@@ -9,6 +9,19 @@ Before you begin, make sure you have the following prerequisites:
 * [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) installed on your local machine.
 * An AWS account.
 * AWS access key and secret key with sufficient permissions to create resources.
+
+## Outputs
+
+| Name | Description | Type |
+| ---- | ----------- | ---- |
+| vpc_id | VPC ID | string |
+| vpc_cidr_block | CIDR block of VPC | string |
+| public_subnet_1_id | subnet ID | string |
+| public_subnet_2_id | subnet ID | string |
+| public_subnet_3_id | subnet ID | string |
+| private_subnet_1_id | subnet ID | string |
+| private_subnet_2_id | subnet ID | string |
+| private_subnet_3_id | subnet ID | string |
 
 ## Infrastructure Setup
 

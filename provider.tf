@@ -4,7 +4,7 @@ provider "aws" {
   region     = var.REGION
   default_tags {
     tags = {
-      Project = "RDS-TRAINING"
+      Project = "PROJECT-TRAINING"
     }
   }
 }
