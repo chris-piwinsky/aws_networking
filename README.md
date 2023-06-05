@@ -10,7 +10,6 @@ Before you begin, make sure you have the following prerequisites:
 - An AWS account.
 - AWS access key and secret key with sufficient permissions to create resources.
 
-
 ## Topology
 
 ![topology](./Topology.png)
