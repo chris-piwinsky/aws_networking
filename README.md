@@ -2,6 +2,10 @@
 
 This project creates an AWS Virtual Private Cloud (VPC) with public and private subnets. It also includes the setup of Internet and NAT gateways to enable connectivity from the public subnet to the Internet and from the private subnet to the Internet via a NAT gateway.
 
+I use this network setup in my other projects:
+- [ECS Setup](https://github.com/chris-piwinsky/ecs_project)
+- [Aurora Postgres](https://github.com/chris-piwinsky/rds_work)
+
 ## Prerequisites
 
 Before you begin, make sure you have the following prerequisites:
