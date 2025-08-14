@@ -152,6 +152,22 @@ This module provides the following outputs for use in other Terraform configurat
 | ecr_dkr_vpc_endpoint_dns_names     | DNS names of the ECR DKR VPC endpoint | list   |
 | logs_vpc_endpoint_dns_names        | DNS names of the CloudWatch Logs VPC endpoint| list   |
 
+### VPC Flow Logs
+| Name                               | Description                           | Type   |
+| ---------------------------------- | ------------------------------------- | ------ |
+| vpc_flow_log_id                    | ID of the VPC Flow Log                | string |
+| vpc_flow_log_cloudwatch_log_group_name | Name of the CloudWatch Log Group for VPC Flow Logs | string |
+| vpc_flow_log_cloudwatch_log_group_arn | ARN of the CloudWatch Log Group for VPC Flow Logs | string |
+| vpc_flow_log_iam_role_arn          | ARN of the IAM role used by VPC Flow Logs | string |
+
+### VPC Flow Logs & Monitoring
+| Name                               | Description                           | Type   |
+| ---------------------------------- | ------------------------------------- | ------ |
+| vpc_flow_log_id                    | ID of the VPC Flow Log                | string |
+| vpc_flow_log_cloudwatch_log_group_name | Name of the CloudWatch Log Group for VPC Flow Logs | string |
+| vpc_flow_log_cloudwatch_log_group_arn | ARN of the CloudWatch Log Group for VPC Flow Logs | string |
+| vpc_flow_log_iam_role_arn          | ARN of the IAM role used by VPC Flow Logs | string |
+
 ## 🔄 Using as a Module
 
 You can use this as a Terraform module in other projects:

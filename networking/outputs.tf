@@ -87,3 +87,20 @@ output "ecr_dkr_vpc_endpoint_dns_names" {
 output "logs_vpc_endpoint_dns_names" {
     value = aws_vpc_endpoint.logs.dns_entry[*].dns_name
 }
+
+# VPC Flow Logs
+output "vpc_flow_log_id" {
+    value = aws_flow_log.vpc_flow_log.id
+}
+
+output "vpc_flow_log_cloudwatch_log_group_name" {
+    value = aws_cloudwatch_log_group.vpc_flow_log.name
+}
+
+output "vpc_flow_log_cloudwatch_log_group_arn" {
+    value = aws_cloudwatch_log_group.vpc_flow_log.arn
+}
+
+output "vpc_flow_log_iam_role_arn" {
+    value = aws_iam_role.flow_log.arn
+}

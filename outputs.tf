@@ -100,3 +100,24 @@ output "logs_vpc_endpoint_dns_names" {
     value = module.networking.logs_vpc_endpoint_dns_names
     description = "DNS names of the CloudWatch Logs VPC endpoint"
 }
+
+# VPC Flow Logs
+output "vpc_flow_log_id" {
+    value = module.networking.vpc_flow_log_id
+    description = "ID of the VPC Flow Log"
+}
+
+output "vpc_flow_log_cloudwatch_log_group_name" {
+    value = module.networking.vpc_flow_log_cloudwatch_log_group_name
+    description = "Name of the CloudWatch Log Group for VPC Flow Logs"
+}
+
+output "vpc_flow_log_cloudwatch_log_group_arn" {
+    value = module.networking.vpc_flow_log_cloudwatch_log_group_arn
+    description = "ARN of the CloudWatch Log Group for VPC Flow Logs"
+}
+
+output "vpc_flow_log_iam_role_arn" {
+    value = module.networking.vpc_flow_log_iam_role_arn
+    description = "ARN of the IAM role used by VPC Flow Logs"
+}
