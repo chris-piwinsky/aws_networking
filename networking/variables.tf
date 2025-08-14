@@ -26,3 +26,8 @@ variable "private_subnet_2_cidr" {
 variable "private_subnet_3_cidr" {
   description = "Private Subnet 3 CIDR"
 }
+
+variable "region" {
+  default = "us-east-1"
+  description = "AWS Region" 
+}
